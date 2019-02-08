@@ -1,12 +1,9 @@
 import argparse
-from converter import convert_to_all, convert_between
+from converter import convert
 
 def get(amount, input_currency, output_currency=None):
     # Returns and prints the result of convert function from converter.py
-    if output_currency == None:
-        return print(convert_to_all(amount, input_currency))
-    else:
-        return  print(convert_between(amount, input_currency, output_currency))
+    return print(convert(amount, input_currency, output_currency))
 
 if __name__ == '__main__':
     # Creates parser
