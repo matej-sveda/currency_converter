@@ -7,7 +7,7 @@ def error_msg(type, msg):
     return json.dumps(err)
 
 def local_currency_file():
-    with open('currencies_supported.json') as data:
+    with open('currencies_supported.json', encoding='utf8') as data:
         return json.load(data)
 
 def check_currency(user_input):
@@ -24,7 +24,7 @@ def web_scrape_all_rates(amount, input_currency):
     try:
         url = 'https://www.xe.com/currencytables/?from={}'.format(input_currency)
         source = requests.get(url).text
-        soup = BeautifulSoup(source, 'lxml')
+        soup = BeautifulSoup(source, 'html.parser')
     except:
         return error_msg('Error', "Exchange website not responding, please check your connection!")
 
@@ -50,7 +50,7 @@ def web_scrape_rate(amount, input_currency, output_currency):
     except:
         return error_msg('Error', "Exchange website not responding, please check your connection!")
 
-    soup = BeautifulSoup(source, 'lxml')
+    soup = BeautifulSoup(source, 'html.parser')
 
     table_scraped = soup.find_all('span', attrs={'class': 'result'})
     output_str = (table_scraped[1].text)

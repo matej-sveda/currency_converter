@@ -44,7 +44,7 @@ $ python api.py
 - examples
 
 ```
-GET /convert?amount=100.0&input_currency=EUR&output_currency=CZK HTTP/1.1
+GET /currency_converter?amount=100.0&input_currency=EUR&output_currency=CZK HTTP/1.1
 {
     "input": {
         "amount": 100.0,
@@ -56,7 +56,7 @@ GET /convert?amount=100.0&input_currency=EUR&output_currency=CZK HTTP/1.1
 }
 ```
 ```
-GET /convert?amount=0.9&input_currency=¥&output_currency=AUD HTTP/1.1
+GET /currency_converter?amount=0.9&input_currency=¥&output_currency=AUD HTTP/1.1
 {
     "input": {
         "amount": 0.9,
@@ -68,7 +68,7 @@ GET /convert?amount=0.9&input_currency=¥&output_currency=AUD HTTP/1.1
 }
 ```
 ```
-GET /convert?amount=10.92&input_currency=£ HTTP/1.1
+GET /currency_converter?amount=10.92&input_currency=£ HTTP/1.1
 {
     "input": {
         "amount": 10.92,
