@@ -44,7 +44,7 @@ $ python api.py
 - examples
 
 ```
-GET /currency_converter?amount=100.0&input_currency=EUR&output_currency=CZK HTTP/1.1
+GET /convert?amount=100.0&input_currency=EUR&output_currency=CZK HTTP/1.1
 {
     "input": {
         "amount": 100.0,
@@ -56,7 +56,7 @@ GET /currency_converter?amount=100.0&input_currency=EUR&output_currency=CZK HTTP
 }
 ```
 ```
-GET /currency_converter?amount=0.9&input_currency=¥&output_currency=AUD HTTP/1.1
+GET /convert?amount=0.9&input_currency=¥&output_currency=AUD HTTP/1.1
 {
     "input": {
         "amount": 0.9,
@@ -68,7 +68,7 @@ GET /currency_converter?amount=0.9&input_currency=¥&output_currency=AUD HTTP/1.
 }
 ```
 ```
-GET /currency_converter?amount=10.92&input_currency=£ HTTP/1.1
+GET /convert?amount=10.92&input_currency=£ HTTP/1.1
 {
     "input": {
         "amount": 10.92,
@@ -136,15 +136,6 @@ $python cli.py --amount 10.92 --input_currency £ | jq
   
 }
 ```
-As mentioned above, I recommend using jq module by installing it and typing "| jq" at the end of the CLI command. Without that, output is not as     structured and intended as a proper JSON should be.
-
-```
-python cli.py --amount 10.92 --input_currency £ 
-
-{"input": {"amount": 10.92, "currency": "GBP"}, "output": {"AUD": 1.808, "BGN": 2.2307, "BRL": 4.8065, ...}}
-```
-
-
 
 ## Authors
 
