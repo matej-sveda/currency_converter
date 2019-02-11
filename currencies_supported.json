@@ -146,7 +146,7 @@
   },
   {
     "cc": "CNY",
-    "symbol": "¥",
+    "symbol": "CN¥",
     "name": "Chinese/Yuan renminbi"
   },
   {
@@ -206,7 +206,7 @@
   },
   {
     "cc": "EGP",
-    "symbol": "£",
+    "symbol": "EG£",
     "name": "Egyptian pound"
   },
   {
@@ -231,7 +231,7 @@
   },
   {
     "cc": "FKP",
-    "symbol": "£",
+    "symbol": "FK£",
     "name": "Falkland Islands pound"
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "cc": "GIP",
-    "symbol": "£",
+    "symbol": "GI£",
     "name": "Gibraltar pound"
   },
   {
@@ -331,7 +331,7 @@
   },
   {
     "cc": "JEP",
-    "symbol": "£",
+    "symbol": "JE£",
     "name": "Jersey pound"
   },
   {
@@ -401,7 +401,7 @@
   },
   {
     "cc": "LBP",
-    "symbol": "£",
+    "symbol": "LB£",
     "name": "Lebanese lira"
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "cc": "NOK",
-    "symbol": "kr",
+    "symbol": "Nkr",
     "name": "Norwegian krone"
   },
   {
@@ -621,7 +621,7 @@
   },
   {
     "cc": "SHP",
-    "symbol": "£",
+    "symbol": "SH£",
     "name": "Saint Helena pound"
   },
   {
