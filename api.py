@@ -15,4 +15,4 @@ def get():
         return convert_between(amount, input_currency, output_currency)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
