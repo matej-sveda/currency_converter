@@ -37,7 +37,6 @@ Please note that due to dupplicity of symbols at some currencies (e.g. AUD - $, 
 2. Run server by running api.py
 ```
 $ python api.py
-
 ```
 3. Now you can start sending HTTP GET requests.
 
